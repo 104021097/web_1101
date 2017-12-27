@@ -6,7 +6,7 @@ echo '<a href="logout.php">登出</a>  <br><br>';
 //此判斷為判定觀看此頁有沒有權限
 //說不定是路人或不相關的使用者
 //因此要給予排除
-if($_SESSION['username'] != null)
+if($_SESSION['user'] != null)
 {
     echo '<a href="register.php">新增</a>    ';
     echo '<a href="update.php">修改</a>    ';
@@ -14,7 +14,7 @@ if($_SESSION['username'] != null)
 
     //將資料庫裡的所有會員資料顯示在畫面上
     $sql = "SELECT * FROM member_table";
-    $result = mysql_query($sql);
+    $result = $link->query($sql);
     while($row = mysql_fetch_row($result))
     {
         echo "$row[0] - 名字(帳號)：$row[1], " .

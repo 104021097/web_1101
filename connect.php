@@ -21,6 +21,7 @@ if($id != null && $pw != null && $row[0] == $id && $row[2] == $pw)
 {
     //將帳號寫入session，方便驗證使用者身份
     $_SESSION['user'] = $id;
+    require_once ('mail.php');
     echo '<h3 style="text-align: center">登入成功!</h3>';
     echo '<meta http-equiv=REFRESH CONTENT=1;url=member.php>';
 }
