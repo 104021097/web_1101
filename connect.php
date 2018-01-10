@@ -23,7 +23,7 @@ if($id != null && $pw != null && $row[0] == $id && $row[2] == $pw)
     $_SESSION['user'] = $id;
     require_once ('mail.php');
     echo '<h3 style="text-align: center">登入成功!</h3>';
-    echo '<meta http-equiv=REFRESH CONTENT=1;url=member.php>';
+    echo '<meta http-equiv=REFRESH CONTENT=1;url=home.php>';
 }
 else
 {
