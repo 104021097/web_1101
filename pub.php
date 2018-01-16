@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,11 +33,12 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li ><a href="home.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
-                <li ><a href="edu.html"><i class="fa fa-book" aria-hidden="true"></i>Education</a></li>
-                <li class="active"><a href="pub.html"><i class="fa fa-flask" aria-hidden="true"></i>Research</a></li>
-                <li><a href="h.html"><i class="fa fa-trophy" aria-hidden="true"></i>Honor</a></li>
-                <li><a href="aca.html"><i class="fa fa-graduation-cap" aria-hidden="true"></i>Academic Exchange</a></li>
+                <li ><a href="home.php"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+                <li ><a href="edu.php"><i class="fa fa-book" aria-hidden="true"></i>Education</a></li>
+                <li class="active"><a href="pub.php"><i class="fa fa-flask" aria-hidden="true"></i>Research</a></li>
+<!--                <li><a href="h.php"><i class="fa fa-trophy" aria-hidden="true"></i>Honor</a></li>-->
+                <li><a href="aca.php"><i class="fa fa-graduation-cap" aria-hidden="true"></i>Academic Exchange</a></li>
+                <li><a href="member.php"><i class="fa fa-user" aria-hidden="true"></i>Member Center</a></li>
             </ul>
             <form class="navbar-form navbar-right" role="search">
                 <div class="form-group input-group">
@@ -49,7 +51,7 @@
                 </div>
             </form>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="index.php"><span class="glyphicon glyphicon-user"></span> My Account</a></li>
+                <li><a href="index.php"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a></li>
             </ul>
         </div>
         <!--header-->
@@ -59,35 +61,35 @@
 <div class="container text-center">
     <div class="row">
         <!--left-->
-        <div class="col-sm-3 well">
-            <div class="well">
-                <p><b>陳兆南</b></p>
-                <img src="https://i.imgur.com/P8gAwaX.jpg" class="img-circle" height="65" width="65" alt="Avatar">
-            </div>
-            <div class="well">
-                <p><a href="#">Interests</a></p>
-                <p>
-                    <span class="label label-default">News</span>
-                    <span class="label label-primary">W3Schools</span>
-                    <span class="label label-success">Labels</span>
-                    <span class="label label-info">Football</span>
-                    <span class="label label-warning">Gaming</span>
-                    <span class="label label-danger">Friends</span>
-                </p>
-            </div>
-            <div class="alert alert-success fade in">
-                <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
-                <p><strong>About Me</strong></p>
-                <b>Educational Background</b>
-                <p>長庚大學電子工程-博士</p>
-                <b>Connect</b>
-                <p>Email:d9228101@gmail.com</p>
-                <p>chencn@asia.edu.tw</p>
-            </div>
-            <!--<p><a href="#">Link</a></p>-->
-            <!--<p><a href="#">Link</a></p>-->
-            <!--<p><a href="#">Link</a></p>-->
-        </div>
+        <!--<div class="col-sm-3 well">-->
+        <!--<div class="well">-->
+        <!--<p><b>陳兆南</b></p>-->
+        <!--<img src="https://i.imgur.com/P8gAwaX.jpg" class="img-circle" height="65" width="65" alt="Avatar">-->
+        <!--</div>-->
+        <!--<div class="well">-->
+        <!--<p><a href="#">Interests</a></p>-->
+        <!--<p>-->
+        <!--<span class="label label-default">News</span>-->
+        <!--<span class="label label-primary">W3Schools</span>-->
+        <!--<span class="label label-success">Labels</span>-->
+        <!--<span class="label label-info">Football</span>-->
+        <!--<span class="label label-warning">Gaming</span>-->
+        <!--<span class="label label-danger">Friends</span>-->
+        <!--</p>-->
+        <!--</div>-->
+        <!--<div class="alert alert-success fade in">-->
+        <!--<a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>-->
+        <!--<p><strong>About Me</strong></p>-->
+        <!--<b>Educational Background</b>-->
+        <!--<p>長庚大學電子工程-博士</p>-->
+        <!--<b>Connect</b>-->
+        <!--<p>Email:d9228101@gmail.com</p>-->
+        <!--<p>chencn@asia.edu.tw</p>-->
+        <!--</div>-->
+        <!--&lt;!&ndash;<p><a href="#">Link</a></p>&ndash;&gt;-->
+        <!--&lt;!&ndash;<p><a href="#">Link</a></p>&ndash;&gt;-->
+        <!--&lt;!&ndash;<p><a href="#">Link</a></p>&ndash;&gt;-->
+        <!--</div>-->
         <!--left-->
         <div class="row">
             <div class="col-sm-12">
@@ -238,13 +240,13 @@
         </div>
 
 
-</div>
-
-
-
-
-
     </div>
+
+
+
+
+
+</div>
 </div>
 
 <footer class="container-fluid text-center">

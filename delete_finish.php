@@ -3,11 +3,12 @@
 <?php
 include("mysql_connect.inc.php");
 $id = $_POST['id'];
-if($_SESSION['username'] != null)
+
+if($_SESSION['user'] != null)
 {
     //刪除資料庫資料語法
     $sql = "delete from member_table where username='$id'";
-    if(mysql_query($sql))
+    if(mysqli_query($link,$sql))
     {
         echo '刪除成功!';
         echo '<meta http-equiv=REFRESH CONTENT=2;url=member.php>';

@@ -1,7 +1,7 @@
 <?php session_start(); ?>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <?php
-if($_SESSION['username'] != null)
+if($_SESSION['user'] != null)
 {
     echo "<form name=\"form\" method=\"post\" action=\"delete_finish.php\">";
     echo "要刪除的帳號：<input type=\"text\" name=\"id\" /> <br>";

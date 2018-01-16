@@ -8,15 +8,15 @@ $pw = $_POST['pw'];
 $pw2 = $_POST['pw2'];
 $telephone = $_POST['telephone'];
 $address = $_POST['address'];
-$other = $_POST['other'];
+
 //紅色字體為判斷密碼是否填寫正確
-if($_SESSION['username'] != null && $pw != null && $pw2 != null && $pw == $pw2)
+if($_SESSION['user'] != null && $pw != null && $pw2 != null && $pw == $pw2)
 {
     $id = $_SESSION['username'];
 
     //更新資料庫資料語法
-    $sql = "update member_table set password=$pw, telephone=$telephone, address=$address, other=$other where username='$id'";
-    if(mysql_query($sql))
+    $sql = "update member_table set password=$pw, telephone=$telephone, address=$address where username='$id'";
+    if(mysqli_query($link,$sql))
     {
         echo '修改成功!';
         echo '<meta http-equiv=REFRESH CONTENT=2;url=member.php>';

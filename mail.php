@@ -17,7 +17,7 @@ try {
 
 
     $mail->setFrom('lemontsu1205@gmail.com', 'JiaYuan Liu');
-    $mail->addAddress('x76945@gmail.com', 'NaNa');
+//    $mail->addAddress('x76945@gmail.com', 'NaNa');
     $mail->addAddress('lemontsu1205@gmail.com','JiaYuan');
 //    $mail->addReplyTo('noreply@example.com', 'noreply');
 //    $mail->addCC('cc@example.com');
